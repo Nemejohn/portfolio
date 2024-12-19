@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NemeJohn - Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="NemeJohn">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="shortcut icon" href="images/portfolio_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body id="home_page">
+        <!-- Start Hero Section -->
+        <nav class="main_nav_bar">
+            <a href="index.html"><div id="logo"><img src="images/nemejohn2-logo.png" alt=""></div></a>
+            <div class="menu_container" id="menu_container">
+                <div onclick="closemenu()" id="close"><i class="fa-solid fa-xmark"></i></div>
+                <ul class="menu_list">
+                    <li><a href="index.html">Home</a></li>
+                    <li onclick="list()"><a href="#about">About Me</a></li>
+                    <li onclick="list()"><a href="#portfolio">Portfolio</a></li>
+                    <li onclick="list()"><a href="#blog">Blog</a></li>
+                </ul>
+                <a href="#"><button>My Resume</button></a>
+            </div>
+            <div onclick="openmenu()" id="menu"><i class='bx bx-menu'></i></div>
+        </nav>
+
+        <section class="box">
+            <div class="container">
+                <video autoplay loop muted>
+                    <source src="portfolio_video2.mp4">
+                </video>
+                <h1>Hey &#128075;, I'm <span>Neme</span> a Fullstack Developer & UIUX <span>Designer</span>.</h1>
+                <p>
+                    I’m a Fullstack Developer creating dynamic and responsive web applications. My journey in web development has equipped 
+                    me with a solid foundation in HTML, CSS, JavaScript, Python and Django.
+                </p>
+                <a href="#contact_container"><button>Contact Me</button></a>
+            </div>
+        </section>
+        <!-- End of Hero Section -->
+
+        <!-- Start About Section -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="header_text">
+                    <p>ABOUT ME</p>
+                </div>
+                <div class="about_container">
+                    <div class="about_image"><img src="images/aboutme-typing2 (1).png" alt=""></div>
+                    <div class="about_bio_information">
+                        <h1>Hi There! I'm Neme John</h1>
+                        <h2>Fullstack Developer</h2>
+                        <p>
+                            I embarked on my journey as a frontend developer in 2023 and then ventured into the server side (Backend Development). 
+                            With just a year of experience, I successfully established and led a tech company from scratch, demonstrating strong leadership 
+                            and strategic vision. <br><br> My ability to inspire and guide my team has been instrumental in achieving 
+                            positive feedback from customers. My creative thinking and innovative approach have been key to my success in the field.
+                        </p>
+                        <div class="about_experience">
+                            <div class="num_of_projects_experience">
+                                <h2>1+</h2>
+                                <p>Year of experience</p>
+                            </div>
+                            <div class="num_of_projects_experience">
+                                <h2>10+</h2>
+                                <p>Completed Projects</p>
+                            </div>
+                            <div class="num_of_projects_experience">
+                                <h2>5+</h2>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About Section -->
+
+        <!-- Start Service Section -->
+        <div class="service">
+            <div class="container">
+                <div class="header_text">
+                    <p>SERVICES</p>
+                </div>
+                <div class="service_container">
+                    <div class="service_div">
+                        <div class="icon_div"><i class="fa-solid fa-code"></i></div>
+                        <div class="service_content">
+                            <h3>Web Development</h3>
+                            <p>
+                                Crafting seamless web applications from front 
+                                to back using HTML5, CSS, JavaScript, Python, and Django. 
+                                From simple websites to complex platforms, I ensure everything 
+                                runs smoothly and efficiently.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_div">
+                        <div class="icon_div"><i class="fa-solid fa-pen-clip"></i></div>
+                        <div class="service_content">
+                            <h3>UIUX Design</h3>
+                            <p>
+                                Designing engaging and intuitive interfaces that provide an 
+                                exceptional user experience. I combine aesthetics with functionality 
+                                to create designs that users love to interact with.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_div">
+                        <div class="icon_div"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="service_content">
+                            <h3>Tech Education</h3>
+                            <p>
+                                Sharing my passion for technology by teaching and mentoring aspiring developers. 
+                                I simplify complex concepts and make learning tech both accessible and enjoyable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_div">
+                        <div class="icon_div"><i class="fa-solid fa-business-time"></i></div>
+                        <div class="service_content">
+                            <h3>Leadership and Project Management</h3>
+                            <p>
+                                Drawing on my experience of leading a tech company, I provide effective project 
+                                management and leadership, driving innovation, collaboration, and success in every project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_div">
+                        <div class="icon_div"><i class="fa-solid fa-computer"></i></div>
+                        <div class="service_content">
+                            <h3>Responsive Design</h3>
+                            <p>
+                                Creating websites that look and function perfectly on any device. I ensure that your site is 
+                                fully responsive and provides a great user experience across desktops, tablets, and smartphones.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_div">
+                        <div class="icon_div"><i class="fa-solid fa-globe"></i></div>
+                        <div class="service_content">
+                            <h3>Web Performance Optimization</h3>
+                            <p>
+                                Ensuring your websites are fast, efficient, and deliver a great user experience by optimizing loading 
+                                times and performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Service Section -->
+
+        <!-- Start Skill Section -->
+        <div class="skills_container">
+            <div class="container">
+                <div class="header_text">
+                    <p class="heading_for_container">MY SKILLS</p>
+                </div>
+                <div class="skills_split_container">
+                    <div class="my_skill_content">
+                        <h1>A Multidimensional Tech Maestro: Fullstack Developer, UI/UX Designer, Educator, and Leader</h1>
+                        <p>
+                            I'm a versatile Fullstack Developer with expertise in HTML5, CSS, JavaScript, Python, and Django, seamlessly crafting both frontend and backend solutions. 
+                            As a UI/UX designer artist, I bring a keen eye for aesthetics and user-centric design, ensuring interfaces are not just functional, but also engaging and intuitive. <br><br>
+                            My passion for teaching shines through in my ability to simplify complex concepts, making tech accessible to all. My leadership skills are proven, having successfully 
+                            led and established a tech company in under a year, driving innovation and fostering teamwork. Let's create something remarkable together!
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <div class="skill_list">
+                            <div class="skill_name">HTML5</div>
+                            <div class="skill_count">
+                                <div class="skill_per" per="90%" style="max-width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill_list">
+                            <div class="skill_name">CSS3</div>
+                            <div class="skill_count">
+                                <div class="skill_per" per="83%" style="max-width: 83%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill_list">
+                            <div class="skill_name">JAVASCRIPT</div>
+                            <div class="skill_count">
+                                <div class="skill_per" per="70%" style="max-width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill_list">
+                            <div class="skill_name">PYTHON</div>
+                            <div class="skill_count">
+                                <div class="skill_per" per="75%" style="max-width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill_list">
+                            <div class="skill_name">DJANGO</div>
+                            <div class="skill_count">
+                                <div class="skill_per" per="75%" style="max-width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill_list">
+                            <div class="skill_name">UI/UX</div>
+                            <div class="skill_count">
+                                <div class="skill_per" per="85%" style="max-width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill_list">
+                            <div class="skill_name">ARTIST</div>
+                            <div class="skill_count">
+                                <div class="skill_per" per="73%" style="max-width: 73%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill_list">
+                            <div class="skill_name">LEADERSHIP TRAIT</div>
+                            <div class="skill_count">
+                                <div class="skill_per" per="85%" style="max-width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Skill Section -->
+
+        <!-- Start Resume Section -->
+        <div class="resume_container">
+            <div class="container">
+                <div class="header_text">
+                    <p>RESUME</p>
+                </div>
+                <div class="resume_split_container">
+                    <!-- Resume Experience starts -->
+                    <div class="experience-education_container">
+                        <div class="resume_header">
+                            <i class='bx bx-briefcase'></i>
+                            <h1>Experience</h1>
+                        </div>
+                        <div class="resume_border">
+                            <div class="resume_experience-education">
+                                <h2>Frontend Development</h2>
+                                <span>Sep. 2023 - Present</span>
+                                <p>
+                                    Enthusiastic and innovative Front-End Developer with a year of experience building 
+                                    and optimizing user-centric, high-performance web applications. Adept at leveraging HTML, 
+                                    CSS and JavaScript to craft responsive, dynamic interfaces. Proven 
+                                    ability to collaborate effectively with cross-functional teams to deliver robust web solutions.
+                                </p>
+                            </div>
+                                <div class="resume_experience-education">
+                                <h2>UIUX Design</h2>
+                                <span>Nov. 2023 - Present</span>
+                                <p>
+                                    Creative and detail-oriented UI/UX Designer with a years of experience designing engaging, user-friendly 
+                                    interfaces for web and mobile applications. Skilled in user research, wireframing, prototyping, and visual design. 
+                                    Committed to creating intuitive and visually appealing user experiences that drive customer satisfaction and business success.
+                                </p>
+                            </div>
+                            <div class="resume_experience-education">
+                                <h2>Web Design</h2>
+                                <span>Oct. 2023 - Nov. 2023</span>
+                                <p>
+                                    Creative and detail-oriented Web Designer with 5 months of experience designing engaging, user-friendly websites. Skilled in UI/UX design
+                                    and responsive web design. Proficient in HTML, CSS, JavaScript, and design tools such as Webflow. Committed to creating visually appealing 
+                                    and functional websites that enhance user experience and achieve business goals.
+                                </p>
+                            </div>
+                            <div class="resume_experience-education">
+                                <h2>Backend Development</h2>
+                                <span>Oct. 2024 - Present</span>
+                                <p>
+                                    Experienced and detail-oriented Backend Developer with 5 months of expertise in building 
+                                    robust, scalable, and high-performance server-side applications. Proficient in various 
+                                    programming languages and technologies, including Python, Django.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Resume Experience ends -->
+
+                    <!-- Resume Education section starts -->
+                    <div class="experience-education_container">
+                        <div class="resume_header">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h1>Education</h1>
+                        </div>
+                        <div class="resume_border">
+                            <div class="resume_experience-education">
+                                <h2>Certificate of Web Development</h2>
+                                <span>2023 - 2024</span>
+                                <a href="https://fliptotech.ng" target="_blank"><h3>FliptoTech Academy</h3></a>
+                                <p>
+                                    I pursued my education at FliptoTech, a prestigious institution renowned for its 
+                                    comprehensive tech programs. During my time there, I received a certificate in web development, 
+                                    which provided a strong foundation in front-end and back-end development. This program equipped 
+                                    me with the skills to create dynamic, responsive websites and applications using the latest 
+                                    technologies and best practices.
+                                </p>
+                            </div>
+                            <div class="resume_experience-education">
+                                <h2>Certificate of UIUX Development</h2>
+                                <span>2023 - 2024</span>
+                                <a href="https://fliptotech.ng" target="_blank"><h3>FliptoTech Academy</h3></a>
+                                <p>
+                                    Moreover, I obtained a certificate in UI/UX Design, where I learned to design user-centric 
+                                    interfaces that deliver excellent user experiences. This training honed my ability to create 
+                                    intuitive and visually appealing designs, ensuring that users find the products engaging and easy to navigate.
+                                </p>
+                            </div>
+                            <div class="resume_experience-education">
+                                <h2>Certificate of Backend Development</h2>
+                                <span>2024 - 2024</span>
+                                <a href="https://fliptotech.ng" target="_blank"><h3>FliptoTech Academy</h3></a>
+                                <p>
+                                    In addition to web development, I earned a certificate in backend development, 
+                                    further enhancing my proficiency in server-side programming, database management, 
+                                    and API integration. This course deepened my understanding of backend systems, 
+                                    enabling me to build robust and scalable applications that meet the demands of modern web environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Resume Education ends -->
+                </div>
+            </div>
+        </div>
+        <!-- End Resume Section -->
+
+        <!-- Start Portfolio Section -->
+        <div class="portfolio_container" id="portfolio">
+            <div class="container">
+                <div class="header_text">
+                    <p>PORTFOLIO</p>
+                </div>
+                <div class="portfolio_split">
+                    <div class="portfolio_content">
+                        <img src="images/fitquest-wrapper.png" alt="">
+                        <div class="portfolio_text">
+                            <h3>FitQuest Website</h3>
+                            <a href="https://www.behance.net/nemejohn" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_content">
+                        <img src="images/Prayer Flier for October.png" alt="">
+                        <div class="portfolio_text">
+                            <h3>Flyers</h3>
+                            <a href="https://www.behance.net/nemejohn" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_content">
+                        <img src="images/sa container second.png" alt="">
+                        <div class="portfolio_text">
+                            <h3>Social Media App</h3>
+                            <a href="https://www.behance.net/nemejohn" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_content">
+                        <img src="images/modern_calculator_app.png" alt="">
+                        <div class="portfolio_text">
+                            <h3>Python Calculator App</h3>
+                            <a href="https://github.com/Nemejohn/My-Python-Calculator-Project.git"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_content">
+                        <img src="images/portfolio_section_image.png" alt="">
+                        <div class="portfolio_text">
+                            <h3>Portfolios</h3>
+                            <a href="https://nemejohn.github.io/portfolio-second" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_content">
+                        <img src="images/ecommerce_background.png" alt="">
+                        <div class="portfolio_text">
+                            <h3>E-commerce Website</h3>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.behance.net/nemejohn"><button>See More</button></a>
+            </div>
+        </div>
+        <!-- End Portfolio Section -->
+
+        <!-- Start Testimonial Section -->
+        <div class="testimonial_container">
+            <div class="container">
+                <div class="header_text">
+                    <p>Testimonials</p>
+                </div>
+                <div class="testimonial_split">
+                    <div class="comment_box">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            <em> Fnag Tech classes has boosted my confidence in coding. I feel more prepared 
+                            to tackle real-world problems now. I highly recommend it to anyone looking to start a tech career.</em>
+                        </p>
+                        <img src="images/student-image.png" alt="">
+                        <h3>Alexander John</h3>
+                        <span><em> — Developer</em></span>
+                    </div>
+                    <div class="comment_box">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            <em> Communication throughout the project was seamless. The developer kept me informed 
+                            at every stage and was always open to feedback.</em>
+                        </p>
+                        <img src="images/Female-enterpreneur2.png" alt="">
+                        <h3>Marie Gomez</h3>
+                        <span><em> — Enterpreneur</em></span>
+                    </div>
+                    <div class="comment_box">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            <em> We’ve seen a noticeable increase in user satisfaction and retention since 
+                            implementing the new design. It’s been a game-changer for our business.</em>
+                        </p>
+                        <img src="images/business-man2.png" alt="">
+                        <h3>Igwe Samuel</h3>
+                        <span><em> — Business Owner</em></span>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonial Section -->
+
+        <!-- Start Blog Section -->
+        <div class="blog_container" id="blog">
+            <div class="container">
+                <div class="header_text">
+                    <p>Latest Blog</p>
+                </div>
+                <div class="blog_split">
+                    <div class="blog_page">
+                        <a href="blog_one.html"><div class="image"><img src="images/blog_image_one.png" alt=""></div></a>
+                        <small>By: <span>Admin</span> | <span>29-11-2024</span></small>
+                        <a href="blog_one.html"><h2>Building Better Websites: The Art of Standardizing and Attracting in Web Development</h2></a>
+                    </div>
+                    <div class="blog_page">
+                        <a href="blog_two.html"><div class="image"><img src="images/blog_image.jpg" alt=""></div></a>
+                        <small>By: <span>Admin</span> | <span>29-11-2024</span></small>
+                        <a href="blog_two.html"><h2>Mastering Web Development: Strategies to Stand Out and Succeed</h2></a>
+                    </div>
+                    <div class="blog_page">
+                        <a href="blog_three.html"><div class="image"><img src="images/blog_three.png" alt=""></div></a>
+                        <small>By: <span>Admin</span> | <span>29-11-2024</span></small>
+                        <a href="blog_three.html"><h2>From Basics to Brilliance: Captivating Web Development Techniques</h2></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Blog Section -->
+
+        <!-- Start Contact Section -->
+        <div class="contact_container" id="contact_container">
+            <div class="container">
+                <div class="header_text">
+                    <p>Contact Me</p>
+                </div>
+                <div class="contact_split">
+                    <div class="contact_form">
+                        <h2>Just say Hello</h2>
+                        <form action="https://formsubmit.co/nemejohn62@gmail.com" method="POST">
+                            <input type="text" minlength="5" name="Fullname:" placeholder="Your Fullname" required>
+                            <input type="email" name="Email:" placeholder="Your Email" required>
+                            <input type="text" name="Subject:" placeholder="Your Subject" required>
+                            <textarea name="Message:" cols="30" rows="7" placeholder="Your Message" required></textarea>
+                            <input type="hidden" name="_template" value="table">
+                            <a href=""><button type="submit">Send Message</button></a>
+                        </form>
+                    </div>
+                    <div class="contact_details">
+                        <h2>Contact Info</h2>
+                        <p>
+                            We'd love to hear from you! Whether you have questions, feedback, or need support, 
+                            feel free to reach out using the available form. Please provide as much detail as 
+                            possible to help us assist you better.
+                        </p>
+                        <div class="phone_email_content">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="phone_email_text">
+                                <h3>Email</h3>
+                                <a href="mailto:nemejohn62@gmail.com"><p>nemejohn62@gmail.com</p></a>
+                            </div>
+                        </div>
+                        <div class="phone_email_content">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="phone_email_text">
+                                <h3>Phone</h3>
+                                <a href="tel:+2349118166827"><p>+234-9118-166-827</p></a>
+                                <a href="tel:+2349130673927"><p>+234-9130-673-927</p></a>
+                            </div>
+                        </div>
+                        <div class="phone_email_content">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="phone_email_text">
+                                <h3>Address</h3>
+                                <a href="http://nemejohn.github.io/portfolio" target="_blank" rel="noopener noreferrer"><p>nemejohn.com</p></a>
+                            </div>
+                        </div>
+                        <p>
+                            Thank you for getting in touch. We will respond to your message as soon as possible. Visit my social profile and get connected.
+                        </p>
+                        <div class="contact-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100091489970441" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/nemejohn62" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.behance.net/nemejohn" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                            <a href="https://wa.me/+2349118166827/?text= Hello, John this is a client." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.twitter.com/johnNeme35747" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Section -->
+
+        <!-- Start Footer Section -->
+        <div class="footer_container">
+            <div class="container">
+                <p>
+                    © 2024. Designed by NemeJohn. All right reserved.
+                </p>
+            </div>
+        </div>
+        <!-- End Footer Section -->
+
+    </body>
+    <script src="portfolio.js"></script>
+</html>
