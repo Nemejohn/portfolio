@@ -1,0 +1,470 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background: #00000b;
+  color: #bbbbbb;
+}
+
+@media (max-width: 2560px){
+    body{
+        padding: 0 30%;
+    }
+}
+
+@media (max-width: 1440px){
+    body{
+        padding: 0 0%;
+    }
+}
+
+.container{
+  padding: 0 10%;
+}
+
+@media (max-width: 777px){
+  .container{
+    padding: 0 5%;
+  }
+}
+
+/* style for scroll-watcher */
+
+.scroll-watcher{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #c450c8;
+  border-radius: 50px;
+  z-index: 9999;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+/* style for bottom-navbar */
+
+.bottom-navbar{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 11, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid #292932;
+  border-radius: 50px;
+  display: flex;
+  padding: 5px;
+  z-index: 999;
+  visibility: hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-navbar .bottom-icon{
+  padding: 7px 13px;
+}
+
+.bottom-navbar .bottom-icon:hover i,
+.bottom-navbar .bottom-icon:hover p{
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.bottom-navbar .bottom-icon i{
+  color: #bbbbbb;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom-navbar .bottom-icon p{
+  font-size: 12px;
+  color: #bbbbbb;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* style for header navbar */
+
+.nav-bar{
+  position: sticky;
+  left: 0;
+  top: 0;  
+  padding: 20px 7%;
+  z-index: 999;
+  background: rgba(0, 0, 11, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.nav-bar .nav-bar_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* From Uiverse.io by neerajbaniwal */ 
+.btn-shine {
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+.nav-bar .nav-bar_container .nav-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-bar .nav-bar_container .nav-list li{
+  margin: 0 15px;
+}
+
+.nav-bar .nav-bar_container .nav-list li a{
+  color: #bbbbbb;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 777px){
+  .btn-shine {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 555px){
+  .nav-bar .nav-bar_container .nav-list{
+    display: none;
+  }
+  .bottom-navbar{
+    visibility: visible;
+  }
+}
+
+/* blog section style */
+
+.blog-section{
+  padding: 100px 0;
+}
+
+.blog-section .container .images{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.blog-section .container .images img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.blog-section .container .blog-folder{
+  margin-top: 30px;
+}
+
+.blog-folder .blog-container-heading .blog-date{
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.blog-folder .blog-container-heading .blog-title{
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.blog-folder .blog-container-heading .blog-description{
+  font-size: 16px;
+  color: #bbbbbb;
+  line-height: 27px;
+}
+
+.blog-folder .blog-container-heading .blog-stack{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 40px;
+}
+
+.blog-folder .blog-container-heading .blog-stack span{
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 12px;
+  color: #bbbbbb;
+}
+  
+.blog-folder hr{
+  width: 100%;
+  height: 1.5px;
+  background: #292932;
+  border: none;
+  margin: 50px 0;
+}
+  
+.blog-folder .blog-flex{
+  display: flex;
+  gap: 20px;
+}
+
+.blog-flex .first-blog-row{
+  flex-basis: 70%;
+}
+
+.blog-flex .first-blog-row .row-content{
+  margin-bottom: 30px;
+}
+
+.blog-flex .first-blog-row .row-content h2{
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.blog-flex .first-blog-row .row-content p{
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.blog-flex .first-blog-row .row-content p b{
+  color: #fff;
+}
+
+.blog-flex .first-blog-row .row-content img{
+  width: 100%;
+  height: 300px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  filter: grayscale(1);
+  margin: 20px 0;
+}
+
+.blog-flex .first-blog-row .row-content .project-image{
+  width: 100%;
+  height: 1300px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  filter: grayscale(1);
+  margin: 20px 0;
+}
+
+.blog-flex .first-blog-row .row-content .project-image2{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  filter: grayscale(0);
+  margin: 20px 0;
+}
+
+.blog-flex .first-blog-row .row-content .project-image3{
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  filter: grayscale(0);
+  margin: 20px 0;
+}
+
+.blog-flex .first-blog-row .row-content .blog-left{
+  font-size: 15px;
+  background: #0f0f16;
+  border-left: 5px solid #c450c8;
+  padding-left: 20px;
+  padding: 15px 5px 15px 20px;
+  margin-top: 20px;
+  line-height: 27px;
+}
+
+.second-blog-row{
+  position: sticky;
+  top: 150px;
+  flex-basis: 30%;
+  padding: 0 30px;
+  overflow-y: auto ;     
+  max-height: 270px ;
+  scrollbar-color: #0f0f16 transparent;
+  scrollbar-width: thin;
+}
+
+.second-blog-row h2{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.second-blog-row .blog-sidebar-list{
+  margin-top: 15px;
+  list-style: none;
+}
+
+.second-blog-row .blog-sidebar-list li{
+  margin: 7px 0;
+  font-size: 15px;
+}
+
+.second-blog-row .blog-sidebar-list li a{
+  color: #6b6b6b;
+  margin: 7px 0;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.second-blog-row .blog-sidebar-list li a:hover{
+  color: #bbbbbb;
+  margin-left: 2px;
+}
+
+@media (max-width: 777px){
+  .blog-section .container .images{
+    width: 100%;
+    height: 200px;
+  }
+  .blog-folder .blog-container-heading .blog-title{
+    font-size: 27px;
+    margin: 20px 0;
+  }
+  .blog-flex .first-blog-row{
+    flex-basis: 100%;
+  }
+  .second-blog-row{
+    display: none;
+  }
+}
+
+
+/* footer styling */
+
+.footer-section{
+  width: 100%;
+  padding: 40px 0;
+  border-top: 1px solid #292932;
+  background: #00000b;
+}
+
+.footer-section .container .footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section .container .footer-content .social-icons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  align-items: center;
+}
+
+.footer-section .container .footer-content .social-icons a{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 18px;
+  color: #bbbbbb;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #bbbbbb;
+  border-bottom: 3px solid #bbbbbb;
+  border-left: 3px solid #bbbbbb;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-section .container .footer-content .social-icons a:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 555px){
+  .footer-section{
+    width: 100%;
+    padding: 30px 0;
+  }
+  .footer-section .container .footer-content{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer-section .container .footer-content .social-icons{
+    justify-content: center;
+  }
+}
+
+
